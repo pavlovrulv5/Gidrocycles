@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.3/themes/base/jquery-ui.min.css"
+      integrity="sha512-8PjjnSP8Bw/WNPxF6wkklW6qlQJdWJc/3w/ZQPvZ/1bjVDkrrSqLe9mfPYrMxtnzsXFPc434+u4FHLnLjXTSsg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+
+  <body>
+    <header class="header short">
+      <div class="wrapper">
+        <div class="header-top">
+          <nav class="nav">
+            <a href="#" class="nav-link"> Магазины </a>
+            <a href="#" class="nav-link"> Акции </a>
+            <a href="#" class="nav-link"> Доставка и оплата </a>
+          </nav>
+          <a href="#" class="logo-link">
+            <svg width="123.000000" height="76.000000">
+              <use xlink:href="./assets/icons/logo.svg#logo"></use>
+            </svg>
+          </a>
+          <img src="./assets/icons/map.svg" alt="img" class="nav-map-icon" />
+          <p class="nav-right">Москва, ул. Науки 25</p>
+          <div class="socials-menu">
+            <a href="" class="socials-link">
+              <svg width="24.000000" height="22.000000">
+                <use xlink:href="./assets/icons/1-social.svg#1-social"></use>
+              </svg>
+            </a>
+            <a href="" class="socials-link">
+              <svg width="24.000000" height="22.000000">
+                <use xlink:href="./assets/icons/2-social.svg#2-social"></use>
+              </svg>
+            </a>
+            <a href="" class="socials-link">
+              <svg width="30.000000" height="23.000000">
+                <use xlink:href="./assets/icons/3-social.svg#3-social"></use>
+              </svg>
+              <span class="social-span">
+                <img src="./assets/icons/social-span.svg" alt="img" />
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <a href="#" class="header-bottom-text"> Квадроциклы </a>
+          <a href="#" class="header-bottom-text"> Катера </a>
+          <a href="#" class="header-bottom-text header-bottom-text-active">
+            Гидроциклы
+          </a>
+          <a href="#" class="header-bottom-text"> Лодки </a>
+          <a href="#" class="header-bottom-text"> Вездеходы </a>
+          <a href="#" class="header-bottom-text"> Снегоходы </a>
+          <a href="#" class="header-bottom-text"> Двигатели </a>
+          <a href="#" class="header-bottom-text"> Запчасти </a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="catalog">
+        <div class="wrapper">
+          <div class="bread-crumbs">
+            <a href="./index.html" class="bread-crumbs-link"> Главная </a>
+            <a href="./index.html" class="bread-crumbs-link clear">
+              Гидроциклы
+            </a>
+          </div>
+          <h1 class="catalog-heading">Гидроциклы</h1>
+          <div class="catalog-row">
+            <div class="catalog-row-left">
+              <a href="#" class="catalog-row-link"> Полноприводные </a>
+              <a href="#" class="catalog-row-link"> от 5000 </a>
+              <a href="#" class="catalog-row-link"> BRP </a>
+              <a href="#" class="catalog-row-link"> еще </a>
+            </div>
+            <div class="catalog-row-right">
+              <select name="" id="" class="catalog-select">
+                <option value="">По популярности</option>
+                <option value="">По цене</option>
+              </select>
+              <div class="catalog-buttons">
+                <button class="catalog-row-right-link">
+                  <svg width="23.000000" height="21.000000">
+                    <use
+                      xlink:href="./assets/icons/catalog-figure-1.svg#catalog-figure-1"
+                    ></use>
+                  </svg>
+                </button>
+                <button class="catalog-row-right-link">
+                  <svg width="30.000000" height="20.000000">
+                    <use
+                      xlink:href="./assets/icons/catalog-figure-2.svg#catalog-figure-2"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-content">
+            <div class="catalog-content-left">
+              <div class="catalog-filters">
+                <div class="fiters-menu">
+                  <button type="button" class="fiters-menu-btn-huge">
+                    Параметры
+                  </button>
+                  <button type="button" class="fiters-menu-btn-shadow">
+                    по марке
+                  </button>
+                </div>
+                <div class="accordion">
+                  <div class="accordion-header">
+                    <div class="accordion-chevron">
+                      <svg
+                        width="12.000000"
+                        height="8.000000"
+                        class="svg-accordion"
+                      >
+                        <use
+                          xlink:href="./assets/icons/accordion.svg#accordion"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h4 class="acordion-header-heading">Наличие</h4>
+                  </div>
+                  <div class="accordion-content split">
+                    <label class="checkbox-text">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="catalog-checkbox"
+                      />
+                      <div class="checkbox"></div>
+                      В наличие
+                    </label>
+                    <label class="checkbox-text">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="catalog-checkbox"
+                      />
+                      <div class="checkbox"></div>
+                      Под заказ
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-filters">
+                <div class="accordion">
+                  <div class="accordion-header">
+                    <div class="accordion-chevron">
+                      <svg
+                        width="12.000000"
+                        height="8.000000"
+                        class="svg-accordion"
+                      >
+                        <use
+                          xlink:href="./assets/icons/accordion.svg#accordion"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h4 class="acordion-header-heading">Новинки</h4>
+                  </div>
+                  <div class="accordion-content split">
+                    <label class="checkbox-text">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="catalog-checkbox"
+                      />
+                      <div class="checkbox"></div>
+                      Все
+                    </label>
+                    <label class="checkbox-text">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="catalog-checkbox"
+                      />
+                      <div class="checkbox"></div>
+                      Новинки
+                    </label>
+                    <label class="checkbox-text">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="catalog-checkbox"
+                      />
+                      <div class="checkbox"></div>
+                      Акции
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-filters">
+                <div class="accordion">
+                  <div class="accordion-header">
+                    <div class="accordion-chevron">
+                      <svg
+                        width="12.000000"
+                        height="8.000000"
+                        class="svg-accordion"
+                      >
+                        <use
+                          xlink:href="./assets/icons/accordion.svg#accordion"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h4 class="acordion-header-heading">Цена</h4>
+                  </div>
+                  <div class="accordion-content split">
+                    <div id="slider-3"></div>
+                    <div class="label-price-row">
+                      <p class="label-price">
+                        От <span class="label-price-black min">400 000</span>
+                      </p>
+                      <p class="label-price">
+                        До <span class="label-price-black max">800 000</span>
+                      </p>
+                    </div>
+                    <div class="power-filters">
+                      <div class="power-filters-row">
+                        <input
+                          type="text"
+                          placeholder="Мощность, л.с."
+                          class="power-filters-placeholder"
+                        />
+                        <div class="select-menu">
+                          <p class="select-menu__value">90</p>
+                          <div class="select-menu__chevron">
+                            <svg
+                              width="12.000000"
+                              height="8.000000"
+                              class="svg-accordion"
+                            >
+                              <use
+                                xlink:href="./assets/icons/accordion.svg#accordion"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="select-menu-list">
+                            <p class="select-menu__value">90</p>
+                            <p class="select-menu__value">130</p>
+                            <p class="select-menu__value">154</p>
+                            <p class="select-menu__value">230</p>
+                            <p class="select-menu__value">300</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="power-filters-row">
+                        <input
+                          type="text"
+                          placeholder="Мощность двигателя, л.с."
+                          class="power-filters-placeholder"
+                        />
+                        <div class="select-menu">
+                          <p class="select-menu__value">9</p>
+                          <div class="select-menu__chevron">
+                            <svg
+                              width="12.000000"
+                              height="8.000000"
+                              class="svg-accordion"
+                            >
+                              <use
+                                xlink:href="./assets/icons/accordion.svg#accordion"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="select-menu-list">
+                            <p class="select-menu__value">9</p>
+                            <p class="select-menu__value">13</p>
+                            <p class="select-menu__value">15</p>
+                            <p class="select-menu__value">23</p>
+                            <p class="select-menu__value">30</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="power-filters-row">
+                        <input
+                          type="text"
+                          placeholder="Макс. скорость"
+                          class="power-filters-placeholder"
+                        />
+                        <div class="select-menu">
+                          <p class="select-menu__value">50</p>
+                          <div class="select-menu__chevron">
+                            <svg
+                              width="12.000000"
+                              height="8.000000"
+                              class="svg-accordion"
+                            >
+                              <use
+                                xlink:href="./assets/icons/accordion.svg#accordion"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="select-menu-list">
+                            <p class="select-menu__value">50</p>
+                            <p class="select-menu__value">70</p>
+                            <p class="select-menu__value">90</p>
+                            <p class="select-menu__value">230</p>
+                            <p class="select-menu__value">320</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-filters">
+                <div class="accordion">
+                  <div class="accordion-header">
+                    <div class="accordion-chevron">
+                      <svg
+                        width="12.000000"
+                        height="8.000000"
+                        class="svg-accordion"
+                      >
+                        <use
+                          xlink:href="./assets/icons/accordion.svg#accordion"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h4 class="acordion-header-heading">Бренд</h4>
+                  </div>
+                  <div class="accordion-content third">
+                    <label class="checkbox-text">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="catalog-checkbox"
+                      />
+                      <div class="checkbox"></div>
+                      BRP
+                    </label>
+                    <label class="checkbox-text">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="catalog-checkbox"
+                      />
+                      <div class="checkbox"></div>
+                      Spark 2
+                    </label>
+                    <label class="checkbox-text">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="catalog-checkbox"
+                      />
+                      <div class="checkbox"></div>
+                      Spark 3
+                    </label>
+                    <a href="#" class="catalog-filters-text"> Показать еще </a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-filters">
+                <div class="accordion">
+                  <div class="accordion-header">
+                    <div class="accordion-chevron">
+                      <svg
+                        width="12.000000"
+                        height="8.000000"
+                        class="svg-accordion"
+                      >
+                        <use
+                          xlink:href="./assets/icons/accordion.svg#accordion"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h4 class="acordion-header-heading">Модель</h4>
+                  </div>
+                  <div class="accordion-content">
+                    <input
+                      type="email"
+                      name=""
+                      id=""
+                      class="checkbox-text-input"
+                      placeholder="Введите модель "
+                    />
+                    <label class="checkbox-text">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="catalog-checkbox"
+                      />
+                      <div class="checkbox"></div>
+                      Sea-doo Spark 2
+                    </label>
+                    <label class="checkbox-text">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="catalog-checkbox"
+                      />
+                      <div class="checkbox"></div>
+                      SeaDoo Spark 90
+                    </label>
+                    <label class="checkbox-text">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="catalog-checkbox"
+                      />
+                      <div class="checkbox"></div>
+                      SeaDoo GTI 155
+                    </label>
+                    <label class="checkbox-text">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="catalog-checkbox"
+                      />
+                      <div class="checkbox"></div>
+                      SeaDoo GTR 230
+                    </label>
+                    <a href="#" class="catalog-filters-text"> Показать еще </a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-filters">
+                <div class="accordion">
+                  <div class="accordion-header">
+                    <div class="accordion-chevron">
+                      <svg
+                        width="12.000000"
+                        height="8.000000"
+                        class="svg-accordion"
+                      >
+                        <use
+                          xlink:href="./assets/icons/accordion.svg#accordion"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h4 class="acordion-header-heading">Страны</h4>
+                  </div>
+                  <div class="accordion-content">
+                    <label class="checkbox-text">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="catalog-checkbox"
+                      />
+                      <div class="checkbox"></div>
+                      Россия
+                    </label>
+                    <label class="checkbox-text">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="catalog-checkbox"
+                      />
+                      <div class="checkbox"></div>
+                      Германия
+                    </label>
+                    <label class="checkbox-text">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="catalog-checkbox"
+                      />
+                      <div class="checkbox"></div>
+                      Китай
+                    </label>
+                    <label class="checkbox-text">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="catalog-checkbox"
+                      />
+                      <div class="checkbox"></div>
+                      CША
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="catalog-list">
+              <li class="catalog-card">
+                <button type="button" class="catalog-card-button">
+                  <svg width="24.000000" height="22.000000">
+                    <use xlink:href="/assets/icons/heart.svg#heart"></use>
+                  </svg>
+                </button>
+                <img
+                  src="./assets/img/catalog-1.png"
+                  alt="img"
+                  class="catalog-card-img"
+                />
+                <h3 class="catalog-card-heading">
+                  Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal
+                </h3>
+                <h4 class="catalog-card-price">1 543 000 ₽</h4>
+                <button type="button" class="catalog-card-button-cart">
+                  <div class="accordion-chevron">
+                    <svg width="60.000000" height="40.000000">
+                      <use
+                        xlink:href="/assets/icons/cart-blue.svg#cart-blue"
+                      ></use>
+                    </svg>
+                  </div>
+                </button>
+              </li>
+              <li class="catalog-card">
+                <button type="button" class="catalog-card-button">
+                  <svg width="24.000000" height="22.000000">
+                    <use xlink:href="/assets/icons/heart.svg#heart"></use>
+                  </svg>
+                </button>
+                <img
+                  src="./assets/img/catalog-1.png"
+                  alt="img"
+                  class="catalog-card-img"
+                />
+                <h3 class="catalog-card-heading">
+                  Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal
+                </h3>
+                <h4 class="catalog-card-price">1 543 000 ₽</h4>
+                <button type="button" class="catalog-card-button-cart">
+                  <svg width="60.000000" height="40.000000">
+                    <use
+                      xlink:href="/assets/icons/cart-blue.svg#cart-blue"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="catalog-card">
+                <button type="button" class="catalog-card-button">
+                  <svg width="24.000000" height="22.000000">
+                    <use xlink:href="/assets/icons/heart.svg#heart"></use>
+                  </svg>
+                </button>
+                <img
+                  src="./assets/img/catalog-1.png"
+                  alt="img"
+                  class="catalog-card-img"
+                />
+                <h3 class="catalog-card-heading">
+                  Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal
+                </h3>
+                <h4 class="catalog-card-price">1 543 000 ₽</h4>
+                <button type="button" class="catalog-card-button-cart">
+                  <svg width="60.000000" height="40.000000">
+                    <use
+                      xlink:href="/assets/icons/cart-blue.svg#cart-blue"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="catalog-card">
+                <button type="button" class="catalog-card-button">
+                  <svg width="24.000000" height="22.000000">
+                    <use xlink:href="/assets/icons/heart.svg#heart"></use>
+                  </svg>
+                </button>
+                <img
+                  src="./assets/img/catalog-1.png"
+                  alt="img"
+                  class="catalog-card-img"
+                />
+                <h3 class="catalog-card-heading">
+                  Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal
+                </h3>
+                <h4 class="catalog-card-price">1 543 000 ₽</h4>
+                <button type="button" class="catalog-card-button-cart">
+                  <svg width="60.000000" height="40.000000">
+                    <use
+                      xlink:href="/assets/icons/cart-blue.svg#cart-blue"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="catalog-card">
+                <button type="button" class="catalog-card-button">
+                  <svg width="24.000000" height="22.000000">
+                    <use xlink:href="/assets/icons/heart.svg#heart"></use>
+                  </svg>
+                </button>
+                <img
+                  src="./assets/img/catalog-1.png"
+                  alt="img"
+                  class="catalog-card-img"
+                />
+                <h3 class="catalog-card-heading">
+                  Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal
+                </h3>
+                <h4 class="catalog-card-price">1 543 000 ₽</h4>
+                <button type="button" class="catalog-card-button-cart">
+                  <svg width="60.000000" height="40.000000">
+                    <use
+                      xlink:href="/assets/icons/cart-blue.svg#cart-blue"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="catalog-card">
+                <button type="button" class="catalog-card-button">
+                  <svg width="24.000000" height="22.000000">
+                    <use xlink:href="/assets/icons/heart.svg#heart"></use>
+                  </svg>
+                </button>
+                <img
+                  src="./assets/img/catalog-1.png"
+                  alt="img"
+                  class="catalog-card-img"
+                />
+                <h3 class="catalog-card-heading">
+                  Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal
+                </h3>
+                <h4 class="catalog-card-price">1 543 000 ₽</h4>
+                <button type="button" class="catalog-card-button-cart">
+                  <svg width="60.000000" height="40.000000">
+                    <use
+                      xlink:href="/assets/icons/cart-blue.svg#cart-blue"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="catalog-card">
+                <button type="button" class="catalog-card-button">
+                  <svg width="24.000000" height="22.000000">
+                    <use xlink:href="/assets/icons/heart.svg#heart"></use>
+                  </svg>
+                </button>
+                <img
+                  src="./assets/img/catalog-1.png"
+                  alt="img"
+                  class="catalog-card-img"
+                />
+                <h3 class="catalog-card-heading">
+                  Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal
+                </h3>
+                <h4 class="catalog-card-price">1 543 000 ₽</h4>
+                <button type="button" class="catalog-card-button-cart">
+                  <svg width="60.000000" height="40.000000">
+                    <use
+                      xlink:href="/assets/icons/cart-blue.svg#cart-blue"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="catalog-card">
+                <button type="button" class="catalog-card-button">
+                  <svg width="24.000000" height="22.000000">
+                    <use xlink:href="/assets/icons/heart.svg#heart"></use>
+                  </svg>
+                </button>
+                <img
+                  src="./assets/img/catalog-1.png"
+                  alt="img"
+                  class="catalog-card-img"
+                />
+                <h3 class="catalog-card-heading">
+                  Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal
+                </h3>
+                <h4 class="catalog-card-price">1 543 000 ₽</h4>
+                <button type="button" class="catalog-card-button-cart">
+                  <svg width="60.000000" height="40.000000">
+                    <use
+                      xlink:href="/assets/icons/cart-blue.svg#cart-blue"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="catalog-card">
+                <button type="button" class="catalog-card-button">
+                  <svg width="24.000000" height="22.000000">
+                    <use xlink:href="/assets/icons/heart.svg#heart"></use>
+                  </svg>
+                </button>
+                <img
+                  src="./assets/img/catalog-1.png"
+                  alt="img"
+                  class="catalog-card-img"
+                />
+                <h3 class="catalog-card-heading">
+                  Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal
+                </h3>
+                <h4 class="catalog-card-price">1 543 000 ₽</h4>
+                <button type="button" class="catalog-card-button-cart">
+                  <svg width="60.000000" height="40.000000">
+                    <use
+                      xlink:href="/assets/icons/cart-blue.svg#cart-blue"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="catalog-card">
+                <button type="button" class="catalog-card-button">
+                  <svg width="24.000000" height="22.000000">
+                    <use xlink:href="/assets/icons/heart.svg#heart"></use>
+                  </svg>
+                </button>
+                <img
+                  src="./assets/img/catalog-1.png"
+                  alt="img"
+                  class="catalog-card-img"
+                />
+                <h3 class="catalog-card-heading">
+                  Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal
+                </h3>
+                <h4 class="catalog-card-price">1 543 000 ₽</h4>
+                <button type="button" class="catalog-card-button-cart">
+                  <svg width="60.000000" height="40.000000">
+                    <use
+                      xlink:href="/assets/icons/cart-blue.svg#cart-blue"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="catalog-card">
+                <button type="button" class="catalog-card-button">
+                  <svg width="24.000000" height="22.000000">
+                    <use xlink:href="/assets/icons/heart.svg#heart"></use>
+                  </svg>
+                </button>
+                <img
+                  src="./assets/img/catalog-1.png"
+                  alt="img"
+                  class="catalog-card-img"
+                />
+                <h3 class="catalog-card-heading">
+                  Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal
+                </h3>
+                <h4 class="catalog-card-price">1 543 000 ₽</h4>
+                <button type="button" class="catalog-card-button-cart">
+                  <svg width="60.000000" height="40.000000">
+                    <use
+                      xlink:href="/assets/icons/cart-blue.svg#cart-blue"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="catalog-card">
+                <button type="button" class="catalog-card-button">
+                  <svg width="24.000000" height="22.000000">
+                    <use xlink:href="/assets/icons/heart.svg#heart"></use>
+                  </svg>
+                </button>
+                <img
+                  src="./assets/img/catalog-1.png"
+                  alt="img"
+                  class="catalog-card-img"
+                />
+                <h3 class="catalog-card-heading">
+                  Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal
+                </h3>
+                <h4 class="catalog-card-price">1 543 000 ₽</h4>
+                <button type="button" class="catalog-card-button-cart">
+                  <svg width="60.000000" height="40.000000">
+                    <use
+                      xlink:href="/assets/icons/cart-blue.svg#cart-blue"
+                    ></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-top">
+          <div class="footer-feft">
+            <h3 class="footer-heading">
+              Подпишитесь на нашу рассылку <br />
+              и узнавайте о акция быстрее
+            </h3>
+            <form class="footer-button-row">
+              <input
+                type="text"
+                name=""
+                id=""
+                class="footer-input"
+                placeholder="Введите ваш e-mail:"
+              />
+              <button type="button" class="footer-btn">Отправить</button>
+            </form>
+          </div>
+          <div class="footer-2nd-column">
+            <h3 class="footer-subheading">Информация</h3>
+            <nav class="footer-nav">
+              <a href="#" class="footer-text"> О компании </a>
+              <a href="#" class="footer-text"> Контакты </a>
+              <a href="#" class="footer-text"> Акции </a>
+              <a href="#" class="footer-text"> Магазины </a>
+            </nav>
+          </div>
+          <div class="footer-3rd-column">
+            <h3 class="footer-subheading">Интернет-магазин</h3>
+            <nav class="footer-nav">
+              <a href="#" class="footer-text"> Доставка и самовывоз </a>
+              <a href="#" class="footer-text"> Оплата </a>
+              <a href="#" class="footer-text"> Возврат-обмен </a>
+              <a href="#" class="footer-text"> Новости </a>
+            </nav>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="socials-link">
+              <svg width="30.000000" height="30.000000">
+                <use xlink:href="./assets/icons/footer-1.svg#footer-1"></use>
+              </svg>
+            </a>
+            <a href="#" class="socials-link">
+              <svg width="30.000000" height="30.000000">
+                <use xlink:href="./assets/icons/footer-2.svg#footer-2"></use>
+              </svg>
+            </a>
+            <a href="#" class="socials-link">
+              <svg width="30.000000" height="30.000000">
+                <use xlink:href="./assets/icons/footer-3.svg#footer-3"></use>
+              </svg>
+            </a>
+            <a href="#" class="socials-link">
+              <svg width="30.000000" height="30.000000">
+                <use xlink:href="./assets/icons/footer-4.svg#footer-4"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <a href="#" class="footer-bottom-text"> Договор оферты </a>
+          <a href="#" class="footer-bottom-text">
+            Политика обработки персональных <br />
+            данных
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"
+      integrity="sha256-sw0iNNXmOJbQhYFuC9OF2kOlD5KQKe1y5lfBn4C9Sjg="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./slider.js"></script>
+    <script src="./accordion.js"></script>
+  </body>
+</html>

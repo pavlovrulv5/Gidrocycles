@@ -1,0 +1,1821 @@
+@charset "UTF-8";
+/* Barlow */
+@import url(../assets/fonts/Barlow/stylesheet.css);
+/* SFPro */
+@import url(../assets/fonts/SFPro/stylesheet.css);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1171px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  margin-top: 27px;
+  margin-bottom: 81px;
+}
+header .wrapper {
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.header-top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-bottom {
+  background: rgb(240, 240, 244);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  height: 53px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px 0 5px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+}
+
+.nav-link {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.socials-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.social-span {
+  position: absolute;
+  top: 12px;
+  right: -5px;
+}
+
+.socials-link {
+  position: relative;
+}
+
+.nav-right {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.nav-map-icon {
+  position: absolute;
+  top: 22px;
+  right: 410px;
+}
+
+.header-bottom-text {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.header-bottom-text-active {
+  position: relative;
+}
+.header-bottom-text-active::after {
+  background: rgb(28, 98, 205);
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -14px;
+  left: 0;
+  content: "";
+}
+
+.promo {
+  width: 100%;
+}
+
+.promo-card {
+  width: 100%;
+  max-width: 870px;
+}
+
+.swiper {
+  width: 870px;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
+
+.swiper-button-next {
+  color: white !important;
+}
+
+.swiper-button-prev {
+  color: white !important;
+}
+
+.promo-card-promotion {
+  width: 100%;
+  max-width: 265px;
+  display: flex;
+  flex-direction: column;
+  height: 397px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid rgb(196, 196, 196);
+}
+
+.promo-card-sale {
+  width: 100%;
+  max-width: 90px;
+  background: rgb(28, 98, 205);
+  color: rgb(255, 255, 255);
+  font-family: "SF Pro Display";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: -1px;
+  letter-spacing: 10%;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 8px 20px 8px 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.promo-card-img {
+  margin-top: 7px;
+  margin-right: 39px;
+  margin-top: 50px;
+}
+
+.promo-card-price {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: absolute;
+  top: 5px;
+  right: 7px;
+}
+
+.promo-card-price-current {
+  color: rgb(28, 98, 205);
+  font-family: "Barlow";
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.promo-card-price-old {
+  color: rgb(196, 196, 196);
+  font-family: Barlow;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.promo-card-heading {
+  color: rgb(47, 48, 53);
+  font-family: "Barlow";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.promo-card-bottom {
+  background: rgb(240, 240, 244);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-card-bottom-text {
+  color: rgb(47, 48, 53);
+  font-family: "Barlow";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.promo-card-bottom-text-blue {
+  color: rgb(28, 98, 205);
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.find {
+  margin-top: 77px;
+}
+
+.find-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.find-form-top {
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+  margin-bottom: 25px;
+}
+
+.find-form-button {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  cursor: pointer;
+  padding: 11px 20px;
+}
+
+.find-form-radio {
+  display: none;
+}
+.find-form-radio:checked + .find-form-button {
+  border-radius: 5px;
+  background: rgb(240, 240, 244);
+}
+
+.find-form-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.find-form-input {
+  border-radius: 3px;
+  background: rgb(240, 240, 244);
+  color: rgb(101, 100, 100);
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 100%;
+  padding-left: 20px;
+  border: none;
+}
+.find-form-input:focus {
+  outline: none;
+}
+
+.find-form-btn {
+  color: rgb(255, 255, 255);
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 12%;
+  text-align: left;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background: rgb(28, 98, 205);
+  padding: 17px 38px 14px 40px;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.category-list-item {
+  box-sizing: border-box;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  width: 100%;
+  max-width: 370px;
+  padding: 20px 37px 7px 20px;
+  justify-content: space-between;
+  background-image: url(../assets/icons/right.svg);
+  background-repeat: no-repeat;
+  background-position-x: 95px;
+  background-position-y: 105px;
+  width: 100%;
+}
+
+.category-heading {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 52px;
+}
+
+.category-link {
+  color: rgb(196, 196, 196);
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.popular-heading {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.popular {
+  margin-bottom: 86px;
+  margin-top: 80px;
+}
+.popular .wrapper {
+  flex-direction: column;
+  align-items: start;
+}
+
+.popular-header {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-bottom: 35px;
+}
+
+.popular-header-text {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  position: relative;
+}
+
+.popular-header-text-active {
+  position: relative;
+}
+.popular-header-text-active::after {
+  background: rgb(28, 98, 205);
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  content: "";
+}
+
+.popular-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../assets/icons/heart.svg);
+  background-repeat: no-repeat;
+  background-position-x: 230px;
+  background-position-y: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 3px;
+  padding: 40px 31px 31px 40px;
+  width: 100%;
+  max-width: 271px;
+  height: 403px;
+}
+.popular-card:hover .popular-card-image-button {
+  opacity: 0.9;
+  visibility: visible;
+  transition: 0.5s;
+}
+
+.popular-card-text-middle {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 25px;
+  max-width: 229px;
+}
+
+.popular-card-text-huge {
+  color: rgb(47, 48, 53);
+  font-family: "Barlow";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.popular-card-text-huge-half {
+  color: rgb(47, 48, 53);
+  font-family: "Barlow";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.popular-card-text-link {
+  color: rgb(28, 98, 205);
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.popular-swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
+.popular-card-image-holder {
+  position: relative;
+}
+
+.popular-card-image-button {
+  color: rgb(47, 48, 53);
+  font-family: "Barlow";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 16px 21px 17px 22px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  background: rgb(255, 255, 255);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0;
+  position: absolute;
+  top: 100px;
+}
+
+.popular-button {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 12%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 17px 43px 15px 43px;
+  background: rgb(240, 240, 244);
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 86px;
+}
+
+.popular-cart-right {
+  position: relative;
+}
+
+.popular-cart {
+  border-radius: 10px 0px 0px 0px;
+  background: rgb(28, 98, 205);
+  max-width: 60px;
+  padding: 10px 16px 7.5px 14px;
+  position: absolute;
+  bottom: -32px;
+  right: -32px;
+}
+
+.sales-banner {
+  display: flex;
+  flex-direction: row;
+  background: rgb(28, 98, 205);
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 72px;
+  padding: 28px 123px 29px 71px;
+}
+
+.sales-heading {
+  color: rgb(255, 255, 255);
+  font-family: "SF Pro Display";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-left: 46px;
+  margin-right: 11px;
+}
+
+.sales-button {
+  color: rgb(47, 48, 53);
+  font-family: SF Pro Display;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 0%;
+  text-align: right;
+  padding: 3px 41px 4px 41px;
+  background: rgb(255, 255, 255);
+}
+
+.buy .wrapper {
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 97px;
+}
+
+.buy-header-text {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  position: relative;
+}
+
+.buy-header-text-active {
+  position: relative;
+}
+.buy-header-text-active::after {
+  background: rgb(28, 98, 205);
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  content: "";
+}
+
+.buy-header {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-bottom: 35px;
+}
+
+.buy-heading {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 19px;
+}
+
+.buy-swiper {
+  width: 100%;
+}
+
+.footer {
+  background: rgb(240, 240, 244);
+  padding-top: 42px;
+  padding-bottom: 22px;
+}
+.footer .wrapper {
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.footer-btn {
+  color: rgb(255, 255, 255);
+  font-family: "SF Pro Display";
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 13px;
+  letter-spacing: 12%;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgb(28, 98, 205);
+  padding: 10px 16px 9px 16px;
+}
+
+.footer-heading {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 34px;
+}
+
+.footer-input {
+  width: 201px;
+  height: 35px;
+  padding-left: 8px;
+  border: none;
+}
+.footer-input::-moz-placeholder {
+  color: rgb(196, 196, 196);
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer-input::placeholder {
+  color: rgb(196, 196, 196);
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer-button-row {
+  display: flex;
+  gap: 0px;
+}
+
+.footer-text {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer-2nd-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-3rd-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-subheading {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 81px;
+}
+
+.footer-bottom-text {
+  color: rgb(72, 73, 77);
+  font-family: SF Pro Display;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.sale-left-side-card {
+  padding: 13px 0px 13px 28px;
+  color: rgb(255, 255, 255);
+  font-family: "SF Pro Display";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 12%;
+  text-align: left;
+  border-radius: 3px;
+  background: rgb(28, 98, 205);
+  max-width: 94px;
+}
+
+.card-section .wrapper {
+  flex-direction: column;
+  align-items: start;
+}
+
+.left-side-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.no-text-left-side-card {
+  color: rgb(140, 141, 146);
+  font-family: "Barlow";
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: left;
+  position: relative;
+}
+.no-text-left-side-card::after {
+  content: "";
+  background: url(../assets/icons/palka.svg);
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 132px;
+  height: 21px;
+}
+
+.text-left-side-card {
+  color: rgb(47, 48, 53);
+  font-family: "Barlow";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.sale-left-link {
+  color: rgb(28, 98, 205);
+  font-family: "SF Pro Display";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.sale-left-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.right-side-card-heading {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: left;
+  max-width: 570px;
+  margin-bottom: 7px;
+}
+
+.side-card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 100px;
+}
+
+.right-side-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 570px;
+}
+
+.right-side-card-text-shadow {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.right-side-card-icons-row {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 31px;
+}
+
+.card-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 436px;
+}
+
+.table-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.table-header-cell-shadow {
+  color: rgb(136, 136, 141);
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 100%;
+}
+
+.table-header-cell {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-right: 19px;
+  position: relative;
+}
+.table-header-cell::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: rgb(28, 98, 205);
+  left: 0;
+  bottom: -3px;
+}
+
+.table-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 17px 20px 8px 0px;
+  width: 100%;
+  border-bottom: 1px solid rgb(226, 226, 230);
+}
+
+.table-body {
+  width: 100%;
+}
+
+.table-cell {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.table-cell.max {
+  width: 134px;
+}
+
+.card-table-footer-text {
+  color: rgb(28, 98, 205);
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: underline;
+  margin-top: 20px;
+}
+
+.table-button {
+  color: rgb(255, 255, 255);
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 12%;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgb(28, 98, 205);
+  padding: 16px 53px 15px 53px;
+  max-width: 177px;
+  margin-top: 20px;
+}
+
+.header-big-table {
+  background: rgb(240, 240, 244);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  height: 53px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px 0 5px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.header-big-table-text {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.header-big-table-text-active {
+  position: relative;
+}
+.header-big-table-text-active::after {
+  background: rgb(28, 98, 205);
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -14px;
+  left: 0;
+  content: "";
+}
+
+.search-big-table {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 54px;
+  width: 100%;
+}
+
+.search-big-table-text-shadow {
+  color: rgb(95, 96, 99);
+  font-family: "SF Pro Display";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.card-big-table .wrapper {
+  flex-direction: column;
+  align-items: start;
+}
+
+.search-big-table-search {
+  border-radius: 3px;
+  background: rgb(240, 240, 244);
+  width: 100%;
+  max-width: 313px;
+  height: 33px;
+  border: none;
+  margin-right: 155px;
+  background-image: url(../assets/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+.search-big-table-search:focus {
+  outline: none;
+  padding-left: 13px;
+}
+
+.search-big-table-checkbox {
+  border: rgb(218, 218, 218);
+  margin-right: 15px;
+  visibility: hidden;
+}
+.search-big-table-checkbox:checked + .radio {
+  border: 1px solid rgb(49, 70, 255);
+}
+.search-big-table-checkbox:checked + .radio::after {
+  content: "";
+  width: 6.8px;
+  height: 6.8px;
+  background: rgb(49, 70, 255);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+}
+.search-big-table-checkbox .blue {
+  background: rgb(49, 70, 255);
+  width: 8.6px;
+  height: 8.6px;
+}
+
+.radio {
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 1px;
+  position: relative;
+}
+
+.search-big-table-input-row {
+  display: flex;
+  flex-direction: row;
+  margin-right: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.card-big-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.big-table-header {
+  width: 100%;
+  max-width: 1010px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 18px;
+}
+
+.big-table-header-cell {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 100%;
+  max-width: 699px;
+}
+
+.big-table-row {
+  display: flex;
+  flex-direction: row;
+  padding: 17px 20px 8px 0px;
+  width: 100%;
+  border-bottom: 1px solid rgb(206, 202, 202);
+}
+
+.big-table-body {
+  width: 100%;
+}
+
+.big-table-cell {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 100%;
+}
+
+.big-table-button {
+  color: rgb(255, 255, 255);
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 12%;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgb(28, 98, 205);
+  padding: 10px 40px 7px 40px;
+  max-width: 140px;
+  height: 35px;
+}
+
+.catalog .wrapper {
+  flex-direction: column;
+  align-items: start;
+}
+
+.bread-crumbs {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.header.short {
+  margin-bottom: 46px;
+}
+
+.bread-crumbs-link {
+  color: rgb(196, 196, 196);
+  font-family: "SF Pro Display";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+  background-image: url(../assets/icons/right-catalog.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 10px;
+  margin-bottom: 41px;
+}
+.bread-crumbs-link.clear {
+  background: none;
+  padding: 0;
+}
+
+.catalog-heading {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 21px;
+}
+
+.catalog-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.catalog-row-left {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.catalog-row-link {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  border-radius: 3px;
+  background: rgb(240, 240, 244);
+  padding: 4px 22px;
+}
+
+.catalog-row-right {
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+  align-items: center;
+}
+
+.catalog-select {
+  width: 178px;
+}
+
+.catalog-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.catalog-row-right-link {
+  padding: 0px;
+  background: none;
+  border: none;
+}
+
+.catalog-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 271px;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid rgb(224, 224, 224);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.catalog-card-heading {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.catalog-card-price {
+  color: rgb(47, 48, 53);
+  font-family: "Barlow";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.catalog-card-button {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 13px;
+  right: 19px;
+  cursor: pointer;
+}
+
+.catalog-card-img {
+  margin-top: 27px;
+}
+
+.catalog-card-button-cart {
+  background: none;
+  border: none;
+  margin-left: auto;
+  padding: 0px;
+  height: 40px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 69px;
+  max-width: 869px;
+  width: 100%;
+}
+
+.catalog-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 9px;
+  margin-top: 47px;
+}
+
+.catalog-content-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 302px;
+}
+
+.catalog-filters {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 301px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.fiters-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 55px;
+}
+
+.fiters-menu-btn-huge {
+  color: rgb(47, 48, 53);
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 9%;
+  text-align: left;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  /* акцент */
+  border-bottom: 2px solid rgb(28, 98, 205);
+}
+
+.fiters-menu-btn-shadow {
+  color: rgb(196, 196, 196);
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 9%;
+  text-align: left;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+}
+
+.accordion-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  margin-top: 41px;
+  margin-bottom: 19px;
+  cursor: pointer;
+}
+
+.acordion-header-heading {
+  color: rgb(133, 133, 133);
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.checkbox {
+  border: 1px solid rgb(196, 196, 196);
+  width: 14px;
+  height: 14px;
+}
+
+.accordion-content {
+  width: 100%;
+  height: 100%;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accordion-content.split {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 19px;
+}
+
+.accordion-content.third {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 19px;
+}
+
+.checkbox-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  color: rgb(47, 48, 53);
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.catalog-checkbox {
+  display: none;
+  box-sizing: border-box;
+}
+.catalog-checkbox:checked + .checkbox {
+  border: 1.5px solid rgb(28, 98, 205);
+  background: rgb(28, 98, 205);
+  background-image: url(../assets/icons/Y.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox-text-input {
+  padding: 8px 0 8px 20px;
+  width: 100%;
+  color: rgb(189, 190, 194);
+  font-family: SF Pro Display;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0%;
+  text-align: left;
+  box-sizing: border-box;
+  border: 1px solid rgb(224, 224, 224);
+}
+.checkbox-text-input:focus {
+  outline: none;
+}
+
+.svg-accordion {
+  transform: rotate(180deg);
+}
+
+.catalog-filters-text {
+  color: rgb(28, 98, 205);
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: underline;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.accordion.active .accordion-chevron {
+  transform: rotate(180deg);
+}
+
+.accordion.active .accordion-content {
+  overflow: visible;
+}
+
+.accordion-chevron {
+  transition: 0.3s;
+}
+
+.ui-slider-handle {
+  background: rgb(28, 98, 205) !important;
+  width: 7.38px !important;
+  height: 7.38px !important;
+  position: absolute;
+  top: 0px !important;
+  border: none !important;
+  margin-left: -4px !important;
+}
+
+.ui-state-focus {
+  outline: none !important;
+  font-weight: 400 !important;
+}
+
+.ui-slider .ui-slider-range {
+  background-color: rgb(28, 98, 205) !important;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 1px;
+}
+
+.ui-slider {
+  height: 7.38px !important;
+  border: none !important;
+}
+
+.ui-slider::after {
+  background-color: rgb(224, 224, 224) !important;
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 3px;
+}
+
+.accordion-content.split {
+  display: flex;
+  flex-direction: column;
+  border: none !important;
+}
+
+.label-price {
+  color: rgb(196, 196, 196);
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.label-price-row {
+  display: flex;
+  flex-direction: row;
+  gap: 132px;
+}
+
+.label-price-black {
+  color: rgb(47, 48, 53);
+  font-family: Barlow;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: underline;
+}
+
+.power-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 100%;
+}
+
+.power-filters-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+}
+
+.power-filters-placeholder {
+  color: rgb(47, 48, 53);
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.power-filters-placeholder:checked {
+  color: rgb(47, 48, 53);
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.select-menu__value {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Barlow;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.select-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: relative;
+}
+.select-menu:hover .select-menu-list {
+  visibility: visible;
+}
+
+.select-menu-list {
+  position: absolute;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  top: 20px;
+  left: -9px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgb(224, 224, 224);
+  background: rgb(255, 255, 255);
+  visibility: hidden;
+  z-index: 999;
+}/*# sourceMappingURL=index.css.map */
