@@ -1,1074 +1,947 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
+    <input
+      type="checkbox"
+      id="mobile-menu-toggler"
+      class="mobile-menu-checkbox"
+    />
+    <div class="mobile-menu">
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-item">
+            <div class="mobile-nav-item-icon">
+              <svg width="24.000000" height="24.000000">
+                <use xlink:href="./assets/icons/2-social.svg#2-social"></use>
+              </svg>
+            </div>
+            <a href="#" class="mobile-nav-link">Войти</a>
+          </li>
+          <li class="mobile-nav-item">
+            <div class="mobile-nav-item-icon">
+              <svg width="24.000000" height="24.000000">
+                <use xlink:href="./assets/icons/2-social.svg#2-social"></use>
+              </svg>
+            </div>
+            <a href="#" class="mobile-nav-link">Регистрация</a>
+          </li>
+          <li class="mobile-nav-item">
+            <div class="mobile-nav-item-icon">
+              <svg width="24.000000" height="22.000000">
+                <use xlink:href="./assets/icons/1-social.svg#1-social"></use>
+              </svg>
+            </div>
+            <a href="#" class="mobile-nav-link">Избранное</a>
+          </li>
+          <li class="mobile-nav-item">
+            <div class="mobile-nav-item-icon">
+              <svg width="30.000000" height="24.000000">
+                <use xlink:href="./assets/icons/3-social.svg#3-social"></use>
+              </svg>
+            </div>
+            <a href="#" class="mobile-nav-link">Корзина</a>
+          </li>
+          <li class="mobile-nav-item">
+            <div class="mobile-nav-item-icon">
+              <svg width="18.000000" height="21.041382">
+                <use xlink:href="./assets/icons/home.svg#home"></use>
+              </svg>
+            </div>
+            <a href="#" class="mobile-nav-link">Магазины</a>
+          </li>
+          <li class="mobile-nav-item">
+            <div class="mobile-nav-item-icon">
+              <svg width="13.544922" height="15.693604">
+                <use xlink:href="./assets/icons/percent.svg#percent"></use>
+              </svg>
+            </div>
+            <a href="#" class="mobile-nav-link">Акции</a>
+          </li>
+          <li class="mobile-nav-item">
+            <div class="mobile-nav-item-icon">
+              <svg width="17.572266" height="16.500000">
+                <use xlink:href="./assets/icons/delivery.svg#delivery"></use>
+              </svg>
+            </div>
+            <a href="#" class="mobile-nav-link">Доставка и оплата</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link">
+              <p class="mobile-menu-text">Квадроциклы</p>
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link">
+              <p class="mobile-menu-text">Катера</p>
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link">
+              <p class="mobile-menu-text">Гидроциклы</p>
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link">
+              <p class="mobile-menu-text">Лодки</p>
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link">
+              <p class="mobile-menu-text">Вездеходы</p>
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link">
+              <p class="mobile-menu-text">Снегоходы</p>
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link">
+              <p class="mobile-menu-text">Двигатели</p>
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link">
+              <p class="mobile-menu-text">Запчасти</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="mobile-menu-text-huge"> Москва, ул. Науки 25 </a>
+    </div>
     <header class="header">
+      <div class="header-top">
         <div class="wrapper">
-            <div class="header-top">
-                <nav class="nav">
-                    <a href="#" class="nav-link">
-                        Магазины
-                    </a>
-                    <a href="#" class="nav-link">
-                        Акции
-                    </a>
-                    <a href="#" class="nav-link">
-                        Доставка и оплата
-                    </a>
-                </nav>
-                <a href="#" class="logo-link">
-                    <svg width="123.000000" height="76.000000">
-                        <use xlink:href="./assets/icons/logo.svg#logo">
-                        </use>
-                    </svg>
-                </a>
-                <img src="./assets/icons/map.svg" alt="img" class="nav-map-icon">
-                <p class="nav-right">
-                    Москва, ул. Науки 25
-                </p>
-                <div class="socials-menu">
-                    <a href="" class="socials-link">
-                        <svg width="24.000000" height="22.000000">
-                            <use xlink:href="./assets/icons/1-social.svg#1-social">
-                            </use>
-                        </svg>
-                    </a>
-                    <a href="" class="socials-link">
-                        <svg width="24.000000" height="22.000000">
-                            <use xlink:href="./assets/icons/2-social.svg#2-social">
-                            </use>
-                        </svg>
-                    </a>
-                    <a href="" class="socials-link">
-                        <svg width="30.000000" height="23.000000">
-                            <use xlink:href="./assets/icons/3-social.svg#3-social">
-                            </use>
-                        </svg>
-                        <span class="social-span">
-                            <img src="./assets/icons/social-span.svg" alt="img">
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <div class="header-bottom">
-                <a href="#" class="header-bottom-text">
-                    Квадроциклы
-                </a>
-                <a href="#" class="header-bottom-text">
-                    Катера
-                </a>
-                <a href="#" class="header-bottom-text header-bottom-text-active">
-                    Гидроциклы
-                </a>
-                <a href="#" class="header-bottom-text">
-                    Лодки
-                </a>
-                <a href="#" class="header-bottom-text">
-                    Вездеходы
-                </a>
-                <a href="#" class="header-bottom-text">
-                    Снегоходы
-                </a>
-                <a href="#" class="header-bottom-text">
-                    Двигатели
-                </a>
-                <a href="#" class="header-bottom-text">
-                    Запчасти
-                </a>
-            </div>
+          <label class="header-burger" for="mobile-menu-toggler">
+            <svg width="34.000000" height="27.000000">
+              <use
+                xlink:href="./assets/icons/burger-menu.svg#burger-menu"
+              ></use>
+            </svg>
+          </label>
+          <nav class="nav">
+            <a href="#" class="nav-link"> Магазины </a>
+            <a href="#" class="nav-link"> Акции </a>
+            <a href="#" class="nav-link">
+              Доставка и <br />
+              оплата
+            </a>
+          </nav>
+          <div class="logo-link-row">
+            <a href="#" class="logo-link">
+              <svg width="73.000000" height="52.000000">
+                <use xlink:href="./assets/icons/logo.svg#logo"></use>
+              </svg>
+            </a>
+            <a href="#" class="logo-text"> DRIVE MOTO </a>
+          </div>
+          <p class="nav-right">Москва, ул. Науки 25</p>
+          <div class="socials-menu">
+            <a href="" class="socials-link">
+              <svg width="24.000000" height="22.000000">
+                <use xlink:href="./assets/icons/1-social.svg#1-social"></use>
+              </svg>
+            </a>
+            <a href="" class="socials-link">
+              <svg width="24.000000" height="22.000000">
+                <use xlink:href="./assets/icons/2-social.svg#2-social"></use>
+              </svg>
+            </a>
+            <a href="" class="socials-link">
+              <svg width="30.000000" height="23.000000">
+                <use xlink:href="./assets/icons/3-social.svg#3-social"></use>
+              </svg>
+              <span class="social-span">
+                <img src="./assets/icons/social-span.svg" alt="img" />
+              </span>
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="header-bottom">
+        <div class="wrapper">
+          <a href="#" class="header-bottom-text"> Квадроциклы </a>
+          <a href="#" class="header-bottom-text"> Катера </a>
+          <a href="#" class="header-bottom-text header-bottom-text-active">
+            Гидроциклы
+          </a>
+          <a href="#" class="header-bottom-text"> Лодки </a>
+          <a href="#" class="header-bottom-text"> Вездеходы </a>
+          <a href="#" class="header-bottom-text"> Снегоходы </a>
+          <a href="#" class="header-bottom-text"> Двигатели </a>
+          <a href="#" class="header-bottom-text"> Запчасти </a>
+        </div>
+      </div>
     </header>
     <main class="main">
-        <section class="promo">
-            <div class="wrapper">
-                <div class="swiper promo-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="promo-card">
-                                <img src="./assets/img/banner.svg" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="promo-card">
-                                <img src="./assets/img/banner.svg" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="promo-card">
-                                <img src="./assets/img/banner.svg" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="promo-card">
-                                <img src="./assets/img/banner.svg" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="promo-card">
-                                <img src="./assets/img/banner.svg" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="promo-card">
-                                <img src="./assets/img/banner.svg" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="promo-card">
-                                <img src="./assets/img/banner.svg" alt="img">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-                <div class="promo-card-promotion">
-                    <div class="promo-card-sale">
-                        акция
-                    </div>
-                    <div class="promo-card-price">
-                        <p class="promo-card-price-current">
-                            190 000 ₽
-                        </p>
-                        <p class="promo-card-price-old">
-                            225 000 ₽
-                        </p>
-                    </div>
-                    <img src="./assets/img/promo-card-engine.png" alt="img" class="promo-card-img">
-                    <h3 class="promo-card-heading">
-                        Лодочный мотор <br>
-                        Suzuki DF9.9BRS
-                    </h3>
-                    <div class="promo-card-bottom">
-                        <p class="promo-card-bottom-text">
-                            Акция действует до
-                        </p>
-                        <p class="promo-card-bottom-text-blue">
-                            31.08.2020
-                        </p>
-                    </div>
-                </div>
+      <section class="promo">
+        <div class="wrapper">
+          <div class="swiper promo-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="img-swiper"
+                  src="./assets/img/banner.svg"
+                  alt="img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-swiper"
+                  src="./assets/img/banner.svg"
+                  alt="img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-swiper"
+                  src="./assets/img/banner.svg"
+                  alt="img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-swiper"
+                  src="./assets/img/banner.svg"
+                  alt="img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-swiper"
+                  src="./assets/img/banner.svg"
+                  alt="img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-swiper"
+                  src="./assets/img/banner.svg"
+                  alt="img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-swiper"
+                  src="./assets/img/banner.svg"
+                  alt="img"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="img-swiper"
+                  src="./assets/img/banner.svg"
+                  alt="img"
+                />
+              </div>
             </div>
-        </section>
-        <section class="find">
-            <div class="wrapper">
-                <form class="find-form">
-                    <div class="find-form-top">
-                        <label>
-                            <input type="radio" name="button" id="" class="find-form-radio">
-                            <div class="find-form-button">
-                                Поиск по номеру
-                            </div>
-                        </label>
-                        <label>
-                            <input type="radio" name="button" id="" class="find-form-radio">
-                            <div class="find-form-button">
-                                Поиск по марке
-                            </div>
-                        </label>
-                        <label>
-                            <input type="radio" name="button" id="" class="find-form-radio">
-                            <div class="find-form-button">
-                                Поиск по названию товара
-                            </div>
-                        </label>
-                    </div>
-                    <div class="find-form-bottom">
-                        <input type="text" class="find-form-input" placeholder="Введите марку">
-                        <button class="find-form-btn">
-                            искать
-                        </button>
-                    </div>
-                </form>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="promo-card-promotion">
+            <div class="promo-card-sale">акция</div>
+            <div class="promo-card-price">
+              <p class="promo-card-price-current">190 000 ₽</p>
+              <p class="promo-card-price-old">225 000 ₽</p>
             </div>
-        </section>
-        <section class="category">
-            <div class="wrapper">
-                <ul class="category-list">
-                    <li class="category-list-item">
-                        <div class="category-list-item-left">
-                            <h2 class="category-heading">
-                                Квадроциклы
-                            </h2>
-                            <a href="#" class="category-link">
-                                Подробнее
-                            </a>
-                        </div>
-                        <img src="./assets/img/1.png" alt="img">
-                    </li>
-                    <li class="category-list-item">
-                        <div class="category-list-item-left">
-                            <h2 class="category-heading">
-                                Гидроциклы
-                            </h2>
-                            <a href="#" class="category-link">
-                                Подробнее
-                            </a>
-                        </div>
-                        <img src="./assets/img/2.png" alt="img">
-                    </li>
-                    <li class="category-list-item">
-                        <div class="category-list-item-left">
-                            <h2 class="category-heading">
-                                Катера
-                            </h2>
-                            <a href="#" class="category-link">
-                                Подробнее
-                            </a>
-                        </div>
-                        <img src="./assets/img/3.png" alt="img">
-                    </li>
-                    <li class="category-list-item">
-                        <div class="category-list-item-left">
-                            <h2 class="category-heading">
-                                Снегоходы
-                            </h2>
-                            <a href="#" class="category-link">
-                                Подробнее
-                            </a>
-                        </div>
-                        <img src="./assets/img/4.png" alt="img">
-                    </li>
-                    <li class="category-list-item">
-                        <div class="category-list-item-left">
-                            <h2 class="category-heading">
-                                Вездеходы
-                            </h2>
-                            <a href="#" class="category-link">
-                                Подробнее
-                            </a>
-                        </div>
-                        <img src="./assets/img/5.png" alt="img">
-                    </li>
-                    <li class="category-list-item">
-                        <div class="category-list-item-left">
-                            <h2 class="category-heading">
-                                Двигатели
-                            </h2>
-                            <a href="#" class="category-link">
-                                Подробнее
-                            </a>
-                        </div>
-                        <img src="./assets/img/6.png" alt="img">
-                    </li>
-                </ul>
+            <img
+              src="./assets/img/promo-card-engine.png"
+              alt="img"
+              class="promo-card-img"
+            />
+            <h3 class="promo-card-heading">
+              Лодочный мотор <br />
+              Suzuki DF9.9BRS
+            </h3>
+            <div class="promo-card-bottom">
+              <p class="promo-card-bottom-text">Акция действует до</p>
+              <p class="promo-card-bottom-text-blue">31.08.2020</p>
             </div>
-        </section>
-        <section class="popular">
-            <div class="wrapper">
-                <h1 class="popular-heading">
-                    Популярные товары
-                </h1>
-                <div class="popular-header">
-                    <a href="#" class="popular-header-text">
-                        запчасти
-                    </a>
-                    <a href="#" class="popular-header-text">
-                        моторы
-                    </a>
-                    <a href="#" class="popular-header-text popular-header-text-active">
-                        шины
-                    </a>
-                    <a href="#" class="popular-header-text">
-                        электроника
-                    </a>
-                    <a href="#" class="popular-header-text">
-                        инструменты
-                    </a>
-                    <a href="#" class="popular-header-text">
-                        аксессуары
-                    </a>
-                </div>
-                <div class="swiper popular-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/popular-1.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Водонепроницаемый
-                                    Рюкзак
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    9 800 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                    <div class="popular-cart">
-                                        <a href="#" class="popular-cart-link">
-                                            <svg width="30.000000" height="23.000000">
-                                                <use xlink:href="./assets/icons/cart-pipular.svg#cart-popular">
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/popular-2.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Спасательный жилет BRP Men's Airflow PFD
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    6 900 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                    <div class="popular-cart">
-                                        <a href="#" class="popular-cart-link">
-                                            <svg width="30.000000" height="23.000000">
-                                                <use xlink:href="./assets/icons/cart-pipular.svg#cart-popular">
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/popular-3.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    BRP Audio-Premium System
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    68 000 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                    <div class="popular-cart">
-                                        <a href="#" class="popular-cart-link">
-                                            <svg width="30.000000" height="23.000000">
-                                                <use xlink:href="./assets/icons/cart-pipular.svg#cart-popular">
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/popular-4.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Спасательное
-                                    снаряжение
-                                </h3>
-                                <h2 class="popular-card-text-huge-half">
-                                    нет в наличии
-                                </h2>
-                                <a href="#" class="popular-card-text-link">
-                                    Сообщить о поступлении
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/popular-1.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Водонепроницаемый
-                                    Рюкзак
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    9 800 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                    <div class="popular-cart">
-                                        <a href="#" class="popular-cart-link">
-                                            <svg width="30.000000" height="23.000000">
-                                                <use xlink:href="./assets/icons/cart-pipular.svg#cart-popular">
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/popular-2.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Спасательный жилет BRP Men's Airflow PFD
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    6 900 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                    <div class="popular-cart">
-                                        <a href="#" class="popular-cart-link">
-                                            <svg width="30.000000" height="23.000000">
-                                                <use xlink:href="./assets/icons/cart-pipular.svg#cart-popular">
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/popular-3.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    BRP Audio-Premium System
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    68 000 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                    <div class="popular-cart">
-                                        <a href="#" class="popular-cart-link">
-                                            <svg width="30.000000" height="23.000000">
-                                                <use xlink:href="./assets/icons/cart-pipular.svg#cart-popular">
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/popular-4.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Спасательное
-                                    снаряжение
-                                </h3>
-                                <h2 class="popular-card-text-huge-half">
-                                    нет в наличии
-                                </h2>
-                                <a href="#" class="popular-card-text-link">
-                                    Сообщить о поступлении
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/popular-1.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Водонепроницаемый
-                                    Рюкзак
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    9 800 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                    <div class="popular-cart">
-                                        <a href="#" class="popular-cart-link">
-                                            <svg width="30.000000" height="23.000000">
-                                                <use xlink:href="./assets/icons/cart-pipular.svg#cart-popular">
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/popular-2.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Спасательный жилет BRP Men's Airflow PFD
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    6 900 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                    <div class="popular-cart">
-                                        <a href="#" class="popular-cart-link">
-                                            <svg width="30.000000" height="23.000000">
-                                                <use xlink:href="./assets/icons/cart-pipular.svg#cart-popular">
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/popular-3.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    BRP Audio-Premium System
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    68 000 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                    <div class="popular-cart">
-                                        <a href="#" class="popular-cart-link">
-                                            <svg width="30.000000" height="23.000000">
-                                                <use xlink:href="./assets/icons/cart-pipular.svg#cart-popular">
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/popular-4.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Спасательное
-                                    снаряжение
-                                </h3>
-                                <h2 class="popular-card-text-huge-half">
-                                    нет в наличии
-                                </h2>
-                                <a href="#" class="popular-card-text-link">
-                                    Сообщить о поступлении
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="popular-button">
-                    Показать еще
-                </a>
+          </div>
+        </div>
+      </section>
+      <section class="find">
+        <div class="wrapper">
+          <form class="find-form">
+            <div class="find-form-top">
+              <label>
+                <input
+                  type="radio"
+                  name="button"
+                  id=""
+                  class="find-form-radio"
+                />
+                <div class="find-form-button">Поиск по номеру</div>
+              </label>
+              <label>
+                <input
+                  checked
+                  type="radio"
+                  name="button"
+                  id=""
+                  class="find-form-radio"
+                />
+                <div class="find-form-button">Поиск по марке</div>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="button"
+                  id=""
+                  class="find-form-radio"
+                />
+                <div class="find-form-button">Поиск по названию товара</div>
+              </label>
             </div>
-        </section>
-        <section class="sales">
-            <div class="wrapper">
-                <div class="sales-banner">
-                    <div class="sales-img">
-                        <img src="./assets/img/sales-1.png" alt="img">
-                        <img src="./assets/img/sales-2.png" alt="img">
-                    </div>
-                    <h2 class="sales-heading">
-                        CКИДКИ<br>
-                        на все запчасти<br>
-                        до 70%
-                    </h2>
-                    <a href="#" class="sales-button">
-                        ПОСМОТЕТЬ ВСЕ
-                    </a>
-                </div>
+            <div class="find-form-bottom">
+              <input
+                type="text"
+                class="find-form-input"
+                placeholder="Введите марку"
+              />
+              <button class="find-form-btn">искать</button>
             </div>
-        </section>
-        <section class="buy">
-            <div class="wrapper">
-                <h1 class="buy-heading">
-                    С этим товаром покупают
-                </h1>
-                <div class="buy-header">
-                    <a href="#" class="buy-header-text">
-                        запчасти
+          </form>
+        </div>
+      </section>
+      <section class="category">
+        <div class="wrapper">
+          <ul class="category-list">
+            <li class="category-list-item">
+              <div class="category-list-item-left">
+                <h2 class="category-heading">Квадроциклы</h2>
+                <a href="#" class="category-link"> Подробнее </a>
+              </div>
+              <img
+                src="./assets/img/1.png"
+                alt="img"
+                class="category-card-image"
+              />
+            </li>
+            <li class="category-list-item">
+              <div class="category-list-item-left">
+                <h2 class="category-heading">Гидроциклы</h2>
+                <a href="#" class="category-link"> Подробнее </a>
+              </div>
+              <img
+                src="./assets/img/2.png"
+                alt="img"
+                class="category-card-image"
+              />
+            </li>
+            <li class="category-list-item">
+              <div class="category-list-item-left">
+                <h2 class="category-heading">Катера</h2>
+                <a href="#" class="category-link"> Подробнее </a>
+              </div>
+              <img
+                src="./assets/img/3.png"
+                alt="img"
+                class="category-card-image"
+              />
+            </li>
+            <li class="category-list-item">
+              <div class="category-list-item-left">
+                <h2 class="category-heading">Снегоходы</h2>
+                <a href="#" class="category-link"> Подробнее </a>
+              </div>
+              <img
+                src="./assets/img/4.png"
+                alt="img"
+                class="category-card-image"
+              />
+            </li>
+            <li class="category-list-item">
+              <div class="category-list-item-left">
+                <h2 class="category-heading">Вездеходы</h2>
+                <a href="#" class="category-link"> Подробнее </a>
+              </div>
+              <img
+                src="./assets/img/5.png"
+                alt="img"
+                class="category-card-image"
+              />
+            </li>
+            <li class="category-list-item">
+              <div class="category-list-item-left">
+                <h2 class="category-heading">Двигатели</h2>
+                <a href="#" class="category-link"> Подробнее </a>
+              </div>
+              <img
+                src="./assets/img/6.png"
+                alt="img"
+                class="category-card-image"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="popular">
+        <div class="wrapper">
+          <h1 class="popular-heading">Популярные товары</h1>
+          <div class="popular-header">
+            <a href="#" class="popular-header-text"> запчасти </a>
+            <a href="#" class="popular-header-text"> моторы </a>
+            <a href="#" class="popular-header-text popular-header-text-active">
+              шины
+            </a>
+            <a href="#" class="popular-header-text"> электроника </a>
+            <a href="#" class="popular-header-text"> инструменты </a>
+            <a href="#" class="popular-header-text"> аксессуары </a>
+          </div>
+          <div class="swiper popular-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="popular-card">
+                  <button class="popular-card-btn-heart">
+                    <svg width="24.000000" height="22.000000">
+                      <use xlink:href="./assets/icons/heart.svg#heart"></use>
+                    </svg>
+                  </button>
+                  <div class="popular-card-image-holder">
+                    <a href="#" class="popular-card-image-button">
+                      посмотреть товар
                     </a>
-                    <a href="#" class="buy-header-text">
-                        моторы
-                    </a>
-                    <a href="#" class="buy-header-text">
-                        шины
-                    </a>
-                    <a href="#" class="buy-header-text buy-header-text-active">
-                        электроника
-                    </a>
-                    <a href="#" class="buy-header-text">
-                        инструменты
-                    </a>
-                    <a href="#" class="buy-header-text">
-                        аксессуары
-                    </a>
+                    <img
+                      src="./assets/img/popular-1.png"
+                      alt="img"
+                      class="popular-card-image"
+                    />
+                  </div>
+                  <h3 class="popular-card-text-middle">
+                    Водонепроницаемый Рюкзак
+                  </h3>
+                  <h2 class="popular-card-text-huge">9 800 ₽</h2>
+                  <button class="popular-cart">
+                    <svg width="30.000000" height="23.000000">
+                      <use
+                        xlink:href="./assets/icons/cart-pipular.svg#cart-popular"
+                      ></use>
+                    </svg>
+                  </button>
                 </div>
-                <div class="swiper buy-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/buy-1.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    BRP Audio-портативная система
-                                </h3>
-                                <h2 class="popular-card-text-huge-half">
-                                    нет в наличии
-                                </h2>
-                                <a href="#" class="popular-card-text-link">
-                                    Сообщить о поступлении
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/buy-2.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Garmin Echomap Plus 62cv
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    45 800 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                    <div class="popular-cart">
-                                        <a href="#" class="popular-cart-link">
-                                            <svg width="30.000000" height="23.000000">
-                                                <use xlink:href="./assets/icons/cart-pipular.svg#cart-popular">
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/buy-3.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Мужской костюм
-                                    3мм
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    7 000 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/buy-4.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    RF D.E.S.S.TM Key
-                                </h3>
-                                <h2 class="popular-card-text-huge-half">
-                                    нет в наличии
-                                </h2>
-                                <a href="#" class="popular-card-text-link">
-                                    Сообщить о поступлении
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/buy-1.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    BRP Audio-портативная система
-                                </h3>
-                                <h2 class="popular-card-text-huge-half">
-                                    нет в наличии
-                                </h2>
-                                <a href="#" class="popular-card-text-link">
-                                    Сообщить о поступлении
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/buy-2.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Garmin Echomap Plus 62cv
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    45 800 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                    <div class="popular-cart">
-                                        <a href="#" class="popular-cart-link">
-                                            <svg width="30.000000" height="23.000000">
-                                                <use xlink:href="./assets/icons/cart-pipular.svg#cart-popular">
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/buy-3.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Мужской костюм
-                                    3мм
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    7 000 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/buy-4.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    RF D.E.S.S.TM Key
-                                </h3>
-                                <h2 class="popular-card-text-huge-half">
-                                    нет в наличии
-                                </h2>
-                                <a href="#" class="popular-card-text-link">
-                                    Сообщить о поступлении
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/buy-1.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    BRP Audio-портативная система
-                                </h3>
-                                <h2 class="popular-card-text-huge-half">
-                                    нет в наличии
-                                </h2>
-                                <a href="#" class="popular-card-text-link">
-                                    Сообщить о поступлении
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/buy-2.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Garmin Echomap Plus 62cv
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    45 800 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                    <div class="popular-cart">
-                                        <a href="#" class="popular-cart-link">
-                                            <svg width="30.000000" height="23.000000">
-                                                <use xlink:href="./assets/icons/cart-pipular.svg#cart-popular">
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/buy-3.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Мужской костюм
-                                    3мм
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    7 000 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/buy-4.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    RF D.E.S.S.TM Key
-                                </h3>
-                                <h2 class="popular-card-text-huge-half">
-                                    нет в наличии
-                                </h2>
-                                <a href="#" class="popular-card-text-link">
-                                    Сообщить о поступлении
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/buy-1.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    BRP Audio-портативная система
-                                </h3>
-                                <h2 class="popular-card-text-huge-half">
-                                    нет в наличии
-                                </h2>
-                                <a href="#" class="popular-card-text-link">
-                                    Сообщить о поступлении
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/buy-2.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Garmin Echomap Plus 62cv
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    45 800 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                    <div class="popular-cart">
-                                        <a href="#" class="popular-cart-link">
-                                            <svg width="30.000000" height="23.000000">
-                                                <use xlink:href="./assets/icons/cart-pipular.svg#cart-popular">
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/buy-3.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    Мужской костюм
-                                    3мм
-                                </h3>
-                                <h2 class="popular-card-text-huge">
-                                    7 000 ₽
-                                </h2>
-                                <div class="popular-cart-right">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="popular-card">
-                                <div class="popular-card-image-holder">
-                                    <a href="#" class="popular-card-image-button">
-                                        посмотреть товар
-                                    </a>
-                                    <img src="./assets/img/buy-4.png" alt="img">
-                                </div>
-                                <h3 class="popular-card-text-middle">
-                                    RF D.E.S.S.TM Key
-                                </h3>
-                                <h2 class="popular-card-text-huge-half">
-                                    нет в наличии
-                                </h2>
-                                <a href="#" class="popular-card-text-link">
-                                    Сообщить о поступлении
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular-card">
+                  <button class="popular-card-btn-heart">
+                    <svg width="24.000000" height="22.000000">
+                      <use xlink:href="./assets/icons/heart.svg#heart"></use>
+                    </svg>
+                  </button>
+                  <div class="popular-card-image-holder">
+                    <a href="#" class="popular-card-image-button">
+                      посмотреть товар
+                    </a>
+                    <img
+                      src="./assets/img/popular-2.png"
+                      alt="img"
+                      class="popular-card-image"
+                    />
+                  </div>
+                  <h3 class="popular-card-text-middle">
+                    Спасательный жилет BRP Men's Airflow PFD
+                  </h3>
+                  <h2 class="popular-card-text-huge">6 900 ₽</h2>
+                  <button class="popular-cart">
+                    <svg width="30.000000" height="23.000000">
+                      <use
+                        xlink:href="./assets/icons/cart-pipular.svg#cart-popular"
+                      ></use>
+                    </svg>
+                  </button>
                 </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular-card">
+                  <button class="popular-card-btn-heart">
+                    <svg width="24.000000" height="22.000000">
+                      <use xlink:href="./assets/icons/heart.svg#heart"></use>
+                    </svg>
+                  </button>
+                  <div class="popular-card-image-holder">
+                    <a href="#" class="popular-card-image-button">
+                      посмотреть товар
+                    </a>
+                    <img
+                      src="./assets/img/popular-3.png"
+                      alt="img"
+                      class="popular-card-image"
+                    />
+                  </div>
+                  <h3 class="popular-card-text-middle">
+                    BRP Audio-Premium System
+                  </h3>
+                  <h2 class="popular-card-text-huge">68 000 ₽</h2>
+                  <button class="popular-cart">
+                    <svg width="30.000000" height="23.000000">
+                      <use
+                        xlink:href="./assets/icons/cart-pipular.svg#cart-popular"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular-card">
+                  <div class="popular-card-image-holder">
+                    <a href="#" class="popular-card-image-button">
+                      посмотреть товар
+                    </a>
+                    <img
+                      src="./assets/img/popular-4.png"
+                      alt="img"
+                      class="popular-card-image"
+                    />
+                  </div>
+                  <h3 class="popular-card-text-middle">RF D.E.S.S.TM Key</h3>
+                  <h2 class="popular-card-text-huge-half">нет в наличии</h2>
+                  <a href="#" class="popular-card-text-link">
+                    Сообщить о поступлении
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular-card">
+                  <button class="popular-card-btn-heart">
+                    <svg width="24.000000" height="22.000000">
+                      <use xlink:href="./assets/icons/heart.svg#heart"></use>
+                    </svg>
+                  </button>
+                  <div class="popular-card-image-holder">
+                    <a href="#" class="popular-card-image-button">
+                      посмотреть товар
+                    </a>
+                    <img
+                      src="./assets/img/popular-1.png"
+                      alt="img"
+                      class="popular-card-image"
+                    />
+                  </div>
+                  <h3 class="popular-card-text-middle">
+                    Водонепроницаемый Рюкзак
+                  </h3>
+                  <h2 class="popular-card-text-huge">9 800 ₽</h2>
+                  <button class="popular-cart">
+                    <svg width="30.000000" height="23.000000">
+                      <use
+                        xlink:href="./assets/icons/cart-pipular.svg#cart-popular"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular-card">
+                  <button class="popular-card-btn-heart">
+                    <svg width="24.000000" height="22.000000">
+                      <use xlink:href="./assets/icons/heart.svg#heart"></use>
+                    </svg>
+                  </button>
+                  <div class="popular-card-image-holder">
+                    <a href="#" class="popular-card-image-button">
+                      посмотреть товар
+                    </a>
+                    <img
+                      src="./assets/img/popular-2.png"
+                      alt="img"
+                      class="popular-card-image"
+                    />
+                  </div>
+                  <h3 class="popular-card-text-middle">
+                    Спасательный жилет BRP Men's Airflow PFD
+                  </h3>
+                  <h2 class="popular-card-text-huge">6 900 ₽</h2>
+                  <button class="popular-cart">
+                    <svg width="30.000000" height="23.000000">
+                      <use
+                        xlink:href="./assets/icons/cart-pipular.svg#cart-popular"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular-card">
+                  <button class="popular-card-btn-heart">
+                    <svg width="24.000000" height="22.000000">
+                      <use xlink:href="./assets/icons/heart.svg#heart"></use>
+                    </svg>
+                  </button>
+                  <div class="popular-card-image-holder">
+                    <a href="#" class="popular-card-image-button">
+                      посмотреть товар
+                    </a>
+                    <img
+                      src="./assets/img/popular-3.png"
+                      alt="img"
+                      class="popular-card-image"
+                    />
+                  </div>
+                  <h3 class="popular-card-text-middle">
+                    BRP Audio-Premium System
+                  </h3>
+                  <h2 class="popular-card-text-huge">68 000 ₽</h2>
+                  <button class="popular-cart">
+                    <svg width="30.000000" height="23.000000">
+                      <use
+                        xlink:href="./assets/icons/cart-pipular.svg#cart-popular"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular-card">
+                  <div class="popular-card-image-holder">
+                    <a href="#" class="popular-card-image-button">
+                      посмотреть товар
+                    </a>
+                    <img
+                      src="./assets/img/popular-4.png"
+                      alt="img"
+                      class="popular-card-image"
+                    />
+                  </div>
+                  <h3 class="popular-card-text-middle">RF D.E.S.S.TM Key</h3>
+                  <h2 class="popular-card-text-huge-half">нет в наличии</h2>
+                  <a href="#" class="popular-card-text-link">
+                    Сообщить о поступлении
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular-card">
+                  <button class="popular-card-btn-heart">
+                    <svg width="24.000000" height="22.000000">
+                      <use xlink:href="./assets/icons/heart.svg#heart"></use>
+                    </svg>
+                  </button>
+                  <div class="popular-card-image-holder">
+                    <a href="#" class="popular-card-image-button">
+                      посмотреть товар
+                    </a>
+                    <img
+                      src="./assets/img/popular-1.png"
+                      alt="img"
+                      class="popular-card-image"
+                    />
+                  </div>
+                  <h3 class="popular-card-text-middle">
+                    Водонепроницаемый Рюкзак
+                  </h3>
+                  <h2 class="popular-card-text-huge">9 800 ₽</h2>
+                  <button class="popular-cart">
+                    <svg width="30.000000" height="23.000000">
+                      <use
+                        xlink:href="./assets/icons/cart-pipular.svg#cart-popular"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular-card">
+                  <button class="popular-card-btn-heart">
+                    <svg width="24.000000" height="22.000000">
+                      <use xlink:href="./assets/icons/heart.svg#heart"></use>
+                    </svg>
+                  </button>
+                  <div class="popular-card-image-holder">
+                    <a href="#" class="popular-card-image-button">
+                      посмотреть товар
+                    </a>
+                    <img
+                      src="./assets/img/popular-2.png"
+                      alt="img"
+                      class="popular-card-image"
+                    />
+                  </div>
+                  <h3 class="popular-card-text-middle">
+                    Спасательный жилет BRP Men's Airflow PFD
+                  </h3>
+                  <h2 class="popular-card-text-huge">6 900 ₽</h2>
+                  <button class="popular-cart">
+                    <svg width="30.000000" height="23.000000">
+                      <use
+                        xlink:href="./assets/icons/cart-pipular.svg#cart-popular"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular-card">
+                  <button class="popular-card-btn-heart">
+                    <svg width="24.000000" height="22.000000">
+                      <use xlink:href="./assets/icons/heart.svg#heart"></use>
+                    </svg>
+                  </button>
+                  <div class="popular-card-image-holder">
+                    <a href="#" class="popular-card-image-button">
+                      посмотреть товар
+                    </a>
+                    <img
+                      src="./assets/img/popular-3.png"
+                      alt="img"
+                      class="popular-card-image"
+                    />
+                  </div>
+                  <h3 class="popular-card-text-middle">
+                    BRP Audio-Premium System
+                  </h3>
+                  <h2 class="popular-card-text-huge">68 000 ₽</h2>
+                  <button class="popular-cart">
+                    <svg width="30.000000" height="23.000000">
+                      <use
+                        xlink:href="./assets/icons/cart-pipular.svg#cart-popular"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular-card">
+                  <div class="popular-card-image-holder">
+                    <a href="#" class="popular-card-image-button">
+                      посмотреть товар
+                    </a>
+                    <img
+                      src="./assets/img/popular-4.png"
+                      alt="img"
+                      class="popular-card-image"
+                    />
+                  </div>
+                  <h3 class="popular-card-text-middle">RF D.E.S.S.TM Key</h3>
+                  <h2 class="popular-card-text-huge-half">нет в наличии</h2>
+                  <a href="#" class="popular-card-text-link">
+                    Сообщить о поступлении
+                  </a>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+          <a href="#" class="popular-button"> Показать еще </a>
+        </div>
+      </section>
+      <section class="sales">
+        <div class="wrapper">
+          <div class="sales-banner">
+            <div class="sales-img">
+              <img src="./assets/img/sales-1.png" alt="img" />
+              <img src="./assets/img/sales-2.png" alt="img" />
+            </div>
+            <h2 class="sales-heading">
+              CКИДКИ<br />
+              на все запчасти<br />
+              до 70%
+            </h2>
+            <a href="#" class="sales-button"> ПОСМОТЕТЬ ВСЕ </a>
+          </div>
+        </div>
+      </section>
+      <section class="buy">
+        <div class="wrapper">
+          <h1 class="buy-heading">С этим товаром покупают</h1>
+          <div class="buy-header">
+            <a href="#" class="buy-header-text"> запчасти </a>
+            <a href="#" class="buy-header-text"> моторы </a>
+            <a href="#" class="buy-header-text"> шины </a>
+            <a href="#" class="buy-header-text buy-header-text-active">
+              электроника
+            </a>
+            <a href="#" class="buy-header-text"> инструменты </a>
+            <a href="#" class="buy-header-text"> аксессуары </a>
+          </div>
+          <div class="swiper buy-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="popular-card">
+                  <div class="popular-card-image-holder">
+                    <a href="#" class="popular-card-image-button">
+                      посмотреть товар
+                    </a>
+                    <img
+                      src="./assets/img/buy-1.png"
+                      alt="img"
+                      class="popular-card-image"
+                    />
+                  </div>
+                  <h3 class="popular-card-text-middle">
+                    BRP Audio-портативная система
+                  </h3>
+                  <h2 class="popular-card-text-huge-half">нет в наличии</h2>
+                  <a href="#" class="popular-card-text-link">
+                    Сообщить о поступлении
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular-card">
+                  <button class="popular-card-btn-heart">
+                    <svg width="24.000000" height="22.000000">
+                      <use xlink:href="./assets/icons/heart.svg#heart"></use>
+                    </svg>
+                  </button>
+                  <div class="popular-card-image-holder">
+                    <a href="#" class="popular-card-image-button">
+                      посмотреть товар
+                    </a>
+                    <img
+                      src="./assets/img/buy-2.png"
+                      alt="img"
+                      class="popular-card-image"
+                    />
+                  </div>
+                  <h3 class="popular-card-text-middle">
+                    Garmin Echomap Plus 62cv
+                  </h3>
+                  <h2 class="popular-card-text-huge">45 800 ₽</h2>
+                  <button class="popular-cart">
+                    <svg width="30.000000" height="23.000000">
+                      <use
+                        xlink:href="./assets/icons/cart-pipular.svg#cart-popular"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular-card">
+                  <div class="popular-card-image-holder">
+                    <a href="#" class="popular-card-image-button">
+                      посмотреть товар
+                    </a>
+                    <img
+                      src="./assets/img/buy-4.png"
+                      alt="img"
+                      class="popular-card-image"
+                    />
+                  </div>
+                  <h3 class="popular-card-text-middle">RF D.E.S.S.TM Key</h3>
+                  <h2 class="popular-card-text-huge-half">нет в наличии</h2>
+                  <a href="#" class="popular-card-text-link">
+                    Сообщить о поступлении
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular-card">
+                  <button class="popular-card-btn-heart">
+                    <svg width="24.000000" height="22.000000">
+                      <use xlink:href="./assets/icons/heart.svg#heart"></use>
+                    </svg>
+                  </button>
+                  <div class="popular-card-image-holder">
+                    <a href="#" class="popular-card-image-button">
+                      посмотреть товар
+                    </a>
+                    <img
+                      src="./assets/img/buy-3.png"
+                      alt="img"
+                      class="popular-card-image"
+                    />
+                  </div>
+                  <h3 class="popular-card-text-middle">
+                    Мужской костюм <br />
+                    3мм
+                  </h3>
+                  <h2 class="popular-card-text-huge">7 000 ₽</h2>
+                  <button class="popular-cart">
+                    <svg width="30.000000" height="23.000000">
+                      <use
+                        xlink:href="./assets/icons/cart-pipular.svg#cart-popular"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="wrapper">
-            <div class="footer-top">
-                <div class="footer-feft">
-                    <h3 class="footer-heading">
-                        Подпишитесь на нашу рассылку <br>
-                        и узнавайте о акция быстрее
-                    </h3>
-                    <form class="footer-button-row">
-                        <input type="text" name="" id="" class="footer-input" placeholder="Введите ваш e-mail:">
-                        <button type="button" class="footer-btn">
-                            Отправить
-                        </button>
-                    </form>
-                </div>
-                <div class="footer-2nd-column">
-                    <h3 class="footer-subheading">
-                        Информация
-                    </h3>
-                    <nav class="footer-nav">
-                        <a href="#" class="footer-text">
-                            О компании
-                        </a>
-                        <a href="#" class="footer-text">
-                            Контакты
-                        </a>
-                        <a href="#" class="footer-text">
-                            Акции
-                        </a>
-                        <a href="#" class="footer-text">
-                            Магазины
-                        </a>
-                    </nav>
-                </div>
-                <div class="footer-3rd-column">
-                    <h3 class="footer-subheading">
-                        Интернет-магазин
-                    </h3>
-                    <nav class="footer-nav">
-                        <a href="#" class="footer-text">
-                            Доставка и самовывоз
-                        </a>
-                        <a href="#" class="footer-text">
-                            Оплата
-                        </a>
-                        <a href="#" class="footer-text">
-                            Возврат-обмен
-                        </a>
-                        <a href="#" class="footer-text">
-                            Новости
-                        </a>
-                    </nav>
-                </div>
-                <div class="footer-socials">
-                    <a href="#" class="socials-link">
-                        <svg width="30.000000" height="30.000000">
-                            <use xlink:href="./assets/icons/footer-1.svg#footer-1">
-                            </use>
-                        </svg>
-                    </a>
-                    <a href="#" class="socials-link">
-                        <svg width="30.000000" height="30.000000">
-                            <use xlink:href="./assets/icons/footer-2.svg#footer-2">
-                            </use>
-                        </svg>
-                    </a>
-                    <a href="#" class="socials-link">
-                        <svg width="30.000000" height="30.000000">
-                            <use xlink:href="./assets/icons/footer-3.svg#footer-3">
-                            </use>
-                        </svg>
-                    </a>
-                    <a href="#" class="socials-link">
-                        <svg width="30.000000" height="30.000000">
-                            <use xlink:href="./assets/icons/footer-4.svg#footer-4">
-                            </use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <a href="#" class="footer-bottom-text">
-                    Договор оферты
-                </a>
-                <a href="#" class="footer-bottom-text">
-                    Политика обработки персональных <br> данных
-                </a>
-            </div>
+      <div class="wrapper">
+        <div class="footer-top">
+          <div class="footer-feft">
+            <h3 class="footer-heading">
+              Подпишитесь на нашу рассылку <br />
+              и узнавайте о акция быстрее
+            </h3>
+            <form class="footer-button-row">
+              <input
+                type="text"
+                name=""
+                id=""
+                class="footer-input"
+                placeholder="Введите ваш e-mail:"
+              />
+              <button type="button" class="footer-btn">Отправить</button>
+            </form>
+          </div>
+          <div class="footer-2nd-column">
+            <h3 class="footer-subheading">Информация</h3>
+            <nav class="footer-nav">
+              <a href="#" class="footer-text"> О компании </a>
+              <a href="#" class="footer-text"> Контакты </a>
+              <a href="#" class="footer-text"> Акции </a>
+              <a href="#" class="footer-text"> Магазины </a>
+            </nav>
+          </div>
+          <div class="footer-3rd-column">
+            <h3 class="footer-subheading">Интернет-магазин</h3>
+            <nav class="footer-nav">
+              <a href="#" class="footer-text"> Доставка и самовывоз </a>
+              <a href="#" class="footer-text"> Оплата </a>
+              <a href="#" class="footer-text"> Возврат-обмен </a>
+              <a href="#" class="footer-text"> Новости </a>
+            </nav>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="socials-link">
+              <svg width="30.000000" height="30.000000">
+                <use xlink:href="./assets/icons/footer-1.svg#footer-1"></use>
+              </svg>
+            </a>
+            <a href="#" class="socials-link">
+              <svg width="30.000000" height="30.000000">
+                <use xlink:href="./assets/icons/footer-2.svg#footer-2"></use>
+              </svg>
+            </a>
+            <a href="#" class="socials-link">
+              <svg width="30.000000" height="30.000000">
+                <use xlink:href="./assets/icons/footer-3.svg#footer-3"></use>
+              </svg>
+            </a>
+            <a href="#" class="socials-link">
+              <svg width="30.000000" height="30.000000">
+                <use xlink:href="./assets/icons/footer-4.svg#footer-4"></use>
+              </svg>
+            </a>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <a href="#" class="footer-bottom-text"> Договор оферты </a>
+          <a href="#" class="footer-bottom-text">
+            Политика обработки персональных <br />
+            данных
+          </a>
+        </div>
+      </div>
     </footer>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="./script.js"></script>
-
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
 </html>

@@ -22,8 +22,22 @@ const popularswiper = new Swiper(".popular-swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  slidePerView: 4,
+  slidesPerView: 4,
   spaceBetween: 30,
+  breakpoints: {
+    1180: {
+      slidesPerView: 4,
+    },
+    887: {
+      slidesPerView: 3,
+    },
+    625: {
+      slidesPerView: 2,
+    },
+    300: {
+      slidesPerView: 1,
+    },
+  },
 });
 
 const buyswiper = new Swiper(".buy-swiper", {
@@ -34,6 +48,20 @@ const buyswiper = new Swiper(".buy-swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  slidePerView: 4,
+  slidesPerView: 4,
   spaceBetween: 30,
+  breakpoints: {
+    1180: {
+      slidesPerView: 4,
+    },
+    887: {
+      slidesPerView: 3,
+    },
+    625: {
+      slidesPerView: 2,
+    },
+    300: {
+      slidesPerView: 1,
+    },
+  },
 });

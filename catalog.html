@@ -15,20 +15,32 @@
   </head>
 
   <body>
-    <header class="header short">
-      <div class="wrapper">
-        <div class="header-top">
+    <header class="header">
+      <div class="header-top">
+        <div class="wrapper">
+          <label class="header-burger" for="mobile-menu-toggler">
+            <svg width="34.000000" height="27.000000">
+              <use
+                xlink:href="./assets/icons/burger-menu.svg#burger-menu"
+              ></use>
+            </svg>
+          </label>
           <nav class="nav">
             <a href="#" class="nav-link"> Магазины </a>
             <a href="#" class="nav-link"> Акции </a>
-            <a href="#" class="nav-link"> Доставка и оплата </a>
+            <a href="#" class="nav-link">
+              Доставка и <br />
+              оплата
+            </a>
           </nav>
-          <a href="#" class="logo-link">
-            <svg width="123.000000" height="76.000000">
-              <use xlink:href="./assets/icons/logo.svg#logo"></use>
-            </svg>
-          </a>
-          <img src="./assets/icons/map.svg" alt="img" class="nav-map-icon" />
+          <div class="logo-link-row">
+            <a href="#" class="logo-link">
+              <svg width="73.000000" height="52.000000">
+                <use xlink:href="./assets/icons/logo.svg#logo"></use>
+              </svg>
+            </a>
+            <a href="#" class="logo-text"> DRIVE MOTO </a>
+          </div>
           <p class="nav-right">Москва, ул. Науки 25</p>
           <div class="socials-menu">
             <a href="" class="socials-link">
@@ -51,7 +63,9 @@
             </a>
           </div>
         </div>
-        <div class="header-bottom">
+      </div>
+      <div class="header-bottom">
+        <div class="wrapper">
           <a href="#" class="header-bottom-text"> Квадроциклы </a>
           <a href="#" class="header-bottom-text"> Катера </a>
           <a href="#" class="header-bottom-text header-bottom-text-active">
@@ -83,10 +97,13 @@
               <a href="#" class="catalog-row-link"> еще </a>
             </div>
             <div class="catalog-row-right">
-              <select name="" id="" class="catalog-select">
+              <!-- <select name="" id="" class="catalog-select">
                 <option value="">По популярности</option>
                 <option value="">По цене</option>
-              </select>
+              </select> -->
+              <button type="button" class="catalog-row-right-btn">
+                По популярности
+              </button>
               <div class="catalog-buttons">
                 <button class="catalog-row-right-link">
                   <svg width="23.000000" height="21.000000">

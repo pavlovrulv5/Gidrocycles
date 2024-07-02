@@ -11,71 +11,122 @@
     />
   </head>
   <body>
-    <header class="header short">
+    <div class="header-top">
       <div class="wrapper">
-        <div class="header-top">
-          <nav class="nav">
-            <a href="#" class="nav-link"> Магазины </a>
-            <a href="#" class="nav-link"> Акции </a>
-            <a href="#" class="nav-link"> Доставка и оплата </a>
-          </nav>
+        <label class="header-burger" for="mobile-menu-toggler">
+          <svg width="34.000000" height="27.000000">
+            <use xlink:href="./assets/icons/burger-menu.svg#burger-menu"></use>
+          </svg>
+        </label>
+        <nav class="nav">
+          <a href="#" class="nav-link"> Магазины </a>
+          <a href="#" class="nav-link"> Акции </a>
+          <a href="#" class="nav-link">
+            Доставка и <br />
+            оплата
+          </a>
+        </nav>
+        <div class="logo-link-row">
           <a href="#" class="logo-link">
-            <svg width="123.000000" height="76.000000">
+            <svg width="73.000000" height="52.000000">
               <use xlink:href="./assets/icons/logo.svg#logo"></use>
             </svg>
           </a>
-          <img src="./assets/icons/map.svg" alt="img" class="nav-map-icon" />
-          <p class="nav-right">Москва, ул. Науки 25</p>
-          <div class="socials-menu">
-            <a href="" class="socials-link">
-              <svg width="24.000000" height="22.000000">
-                <use xlink:href="./assets/icons/1-social.svg#1-social"></use>
-              </svg>
-            </a>
-            <a href="" class="socials-link">
-              <svg width="24.000000" height="22.000000">
-                <use xlink:href="./assets/icons/2-social.svg#2-social"></use>
-              </svg>
-            </a>
-            <a href="" class="socials-link">
-              <svg width="30.000000" height="23.000000">
-                <use xlink:href="./assets/icons/3-social.svg#3-social"></use>
-              </svg>
-              <span class="social-span">
-                <img src="./assets/icons/social-span.svg" alt="img" />
-              </span>
-            </a>
-          </div>
+          <a href="#" class="logo-text"> DRIVE MOTO </a>
         </div>
-        <div class="header-bottom">
-          <a href="#" class="header-bottom-text"> Квадроциклы </a>
-          <a href="#" class="header-bottom-text"> Катера </a>
-          <a href="#" class="header-bottom-text header-bottom-text-active">
-            Гидроциклы
+        <p class="nav-right">Москва, ул. Науки 25</p>
+        <div class="socials-menu">
+          <a href="" class="socials-link">
+            <svg width="24.000000" height="22.000000">
+              <use xlink:href="./assets/icons/1-social.svg#1-social"></use>
+            </svg>
           </a>
-          <a href="#" class="header-bottom-text"> Лодки </a>
-          <a href="#" class="header-bottom-text"> Вездеходы </a>
-          <a href="#" class="header-bottom-text"> Снегоходы </a>
-          <a href="#" class="header-bottom-text"> Двигатели </a>
-          <a href="#" class="header-bottom-text"> Запчасти </a>
+          <a href="" class="socials-link">
+            <svg width="24.000000" height="22.000000">
+              <use xlink:href="./assets/icons/2-social.svg#2-social"></use>
+            </svg>
+          </a>
+          <a href="" class="socials-link">
+            <svg width="30.000000" height="23.000000">
+              <use xlink:href="./assets/icons/3-social.svg#3-social"></use>
+            </svg>
+            <span class="social-span">
+              <img src="./assets/icons/social-span.svg" alt="img" />
+            </span>
+          </a>
         </div>
       </div>
-    </header>
+    </div>
     <main>
       <section class="card-section">
         <div class="wrapper">
           <div class="bread-crumbs">
-            <a href="./index.html" class="bread-crumbs-link"> Главная </a>
-            <a href="./index.html" class="bread-crumbs-link"> Гидроциклы </a>
-            <a href="./index.html" class="bread-crumbs-link clear">
+            <a href="./index.html" class="bread-crumbs-link-card"> Главная </a>
+            <a href="./index.html" class="bread-crumbs-link-card">
+              Гидроциклы
+            </a>
+            <a href="./index.html" class="bread-crumbs-link-card clear">
               Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
             </a>
           </div>
           <div class="side-card">
+            <div class="right-side-card-hidden">
+              <h1 class="right-side-card-heading">
+                Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
+              </h1>
+              <p class="right-side-card-text-shadow">Код товара: 366666-2</p>
+              <div class="right-side-card-icons-row">
+                <a href="#">
+                  <svg width="24.000000" height="22.000000">
+                    <use xlink:href="./assets/icons/heart.svg#heart"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg width="20.000000" height="27.000000">
+                    <use xlink:href="./assets/icons/tetris.svg#tetris"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg width="143.000000" height="23.000000">
+                    <use xlink:href="./assets/icons/stars.svg#stars"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="card-table">
+                <div class="table-body">
+                  <div class="table-row">
+                    <div class="table-cell">Производитель</div>
+                    <div class="table-cell max">Канада</div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell">Количество мест, шт:</div>
+                    <div class="table-cell max">3</div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell">Мощность, л.с.</div>
+                    <div class="table-cell max">155</div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell">Тип двигателя</div>
+                    <div class="table-cell max">Бензиновый</div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell">Год выпуска</div>
+                    <div class="table-cell max">2018</div>
+                  </div>
+                </div>
+                <a href="#" class="card-table-footer-text"> Показать еще </a>
+                <a href="#" class="table-button"> купить </a>
+              </div>
+            </div>
             <div class="left-side-card">
               <a href="#" class="sale-left-side-card">SALE</a>
               <div class="sale-left-middle">
-                <img src="./assets/img/gidrotsikl-card.png" alt="img" />
+                <img
+                  src="./assets/img/gidrotsikl-card.png"
+                  alt="img"
+                  class="sale-left-middle-img"
+                />
                 <p class="no-text-left-side-card">1 200 475 ₽</p>
                 <div class="sale-left-line"></div>
                 <p class="text-left-side-card">1 100 475 ₽</p>
@@ -105,10 +156,6 @@
                     <use xlink:href="./assets/icons/stars.svg#stars"></use>
                   </svg>
                 </a>
-              </div>
-              <div class="table-header">
-                <div class="table-header-cell">Характеристики</div>
-                <div class="table-header-cell-shadow">Наличие в магазине</div>
               </div>
               <div class="card-table">
                 <div class="table-body">
@@ -140,7 +187,7 @@
           </div>
         </div>
       </section>
-      <section class="card-big-table">
+      <section class="card-big-table-section">
         <div class="wrapper">
           <div class="header-big-table">
             <a href="#" class="header-big-table-text"> О товаре </a>
@@ -159,33 +206,43 @@
           <div class="search-big-table">
             <p class="search-big-table-text-shadow">Магазин</p>
             <input type="text" class="search-big-table-search" />
-            <label class="search-big-table-input-row">
-              <input
-                type="radio"
-                name="delivery"
-                class="search-big-table-checkbox"
-              />
-              <div class="radio"></div>
-              <p class="search-big-table-text-shadow">Забрать сегодня</p>
-            </label>
-            <label class="search-big-table-input-row">
-              <input
-                type="radio"
-                name="delivery"
-                class="search-big-table-checkbox"
-              />
-              <div class="radio"></div>
-              <p class="search-big-table-text-shadow">
-                Забрать в течение недели
-              </p>
-            </label>
+            <div class="search-big-table-input-row-2rows">
+              <label class="search-big-table-input-row">
+                <input
+                  type="radio"
+                  name="delivery"
+                  class="search-big-table-checkbox"
+                />
+                <div class="radio"></div>
+                <p class="search-big-table-text-shadow">Забрать сегодня</p>
+              </label>
+              <label class="search-big-table-input-row">
+                <input
+                  type="radio"
+                  name="delivery"
+                  class="search-big-table-checkbox"
+                />
+                <div class="radio"></div>
+                <p class="search-big-table-text-shadow">
+                  Забрать в течение недели
+                </p>
+              </label>
+            </div>
           </div>
           <div class="card-big-table">
             <div class="big-table-header">
-              <div class="big-table-header-cell">Адрес</div>
-              <div class="big-table-header-cell">Режим работы</div>
-              <div class="big-table-header-cell">Доступно</div>
-              <div class="big-table-header-cell">Количество</div>
+              <div class="big-table-header-cell big-table-header-cell-1">
+                Адрес
+              </div>
+              <div class="big-table-header-cell big-table-header-cell-2">
+                Режим работы
+              </div>
+              <div class="big-table-header-cell big-table-header-cell-3">
+                Доступно
+              </div>
+              <div class="big-table-header-cell big-table-header-cell-4">
+                Количество
+              </div>
             </div>
             <div class="big-table-body">
               <div class="big-table-row">
@@ -226,6 +283,31 @@
                 <div class="big-table-cell">0</div>
                 <a href="#" class="big-table-button"> купить </a>
               </div>
+            </div>
+          </div>
+          <div class="card-big-table-mini">
+            <div class="card-big-table-mini-row">
+              <p class="card-big-table-mini-row-text-huge">Адрес</p>
+              <p class="card-big-table-mini-row-text">Москва, ул. Науки 25</p>
+            </div>
+            <div class="card-big-table-mini-row">
+              <p class="card-big-table-mini-row-text-black">Режим работы</p>
+            </div>
+            <div class="card-big-table-mini-row">
+              <p class="card-big-table-mini-row-text">пн-сб:</p>
+              <p class="card-big-table-mini-row-text">09:00-17:00</p>
+            </div>
+            <div class="card-big-table-mini-row">
+              <p class="card-big-table-mini-row-text">вс:</p>
+              <p class="card-big-table-mini-row-text">Москва, ул. Науки 25</p>
+            </div>
+            <div class="card-big-table-mini-row">
+              <p class="card-big-table-mini-row-text-black">Доступно</p>
+              <p class="card-big-table-mini-row-text">В наличие</p>
+            </div>
+            <div class="card-big-table-mini-row">
+              <p class="card-big-table-mini-row-text-black">Количество</p>
+              <p class="card-big-table-mini-row-text">1</p>
             </div>
           </div>
         </div>

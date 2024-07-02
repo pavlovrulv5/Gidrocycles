@@ -12,6 +12,30 @@
   max-width: 94px;
 }
 
+.bread-crumbs {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bread-crumbs-link-card {
+  color: rgb(196, 196, 196);
+  font-family: $firstFont;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+  background-image: url(../assets/icons/right-catalog.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 10px;
+  &.clear {
+    background: none;
+    padding: 0;
+  }
+  margin-bottom: 41px;
+}
+
 .card-section {
   .wrapper {
     flex-direction: column;
@@ -98,6 +122,10 @@
   flex-direction: column;
   width: 100%;
   max-width: 570px;
+}
+
+.right-side-card-hidden {
+  display: none;
 }
 
 .right-side-card-text-shadow {
@@ -222,7 +250,6 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 60px;
   height: 53px;
   justify-content: space-between;
   align-items: center;
@@ -262,6 +289,7 @@
   align-items: center;
   margin-bottom: 54px;
   width: 100%;
+  justify-content: space-between;
 }
 
 .search-big-table-text-shadow {
@@ -275,7 +303,7 @@
   margin-right: 10px;
 }
 
-.card-big-table {
+.card-big-table-section {
   .wrapper {
     flex-direction: column;
     align-items: start;
@@ -301,8 +329,7 @@
 
 .search-big-table-checkbox {
   border: rgb(218, 218, 218);
-  margin-right: 15px;
-  visibility: hidden;
+  display: none;
   &:checked + .radio {
     border: 1px solid rgb(49, 70, 255);
     &::after {
@@ -344,6 +371,12 @@
   cursor: pointer;
 }
 
+.search-big-table-input-row-2rows {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
 .card-big-table {
   display: flex;
   flex-direction: column;
@@ -353,9 +386,9 @@
 .big-table-header {
   width: 100%;
   max-width: 1010px;
-  display: flex;
-  flex-direction: row;
   margin-bottom: 18px;
+  display: grid;
+  grid-template-columns: 26.46% 22.31% 17.99% 20.81% 12.35%;
 }
 
 .big-table-header-cell {
@@ -366,16 +399,14 @@
   line-height: 24px;
   letter-spacing: 0%;
   text-align: left;
-  width: 100%;
-  max-width: 699px;
 }
 
 .big-table-row {
-  display: flex;
-  flex-direction: row;
   padding: 17px 20px 8px 0px;
   width: 100%;
   border-bottom: 1px solid rgb(206, 202, 202);
+  display: grid;
+  grid-template-columns: 26.46% 22.31% 17.99% 20.81% 12.35%;
 }
 
 .big-table-body {
@@ -390,7 +421,6 @@
   line-height: 150%;
   letter-spacing: 0%;
   text-align: left;
-  width: 100%;
 }
 
 .big-table-button {
@@ -406,4 +436,50 @@
   padding: 10px 40px 7px 40px;
   max-width: 140px;
   height: 35px;
+  width: 100%;
+}
+
+.card-big-table-mini {
+  width: 100%;
+  display: none;
+}
+
+.card-big-table-mini-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-big-table-mini-row-text-huge {
+  color: rgb(47, 48, 53);
+  font-family: $firstFont;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 3px;
+}
+
+.card-big-table-mini-row-text {
+  color: rgb(47, 48, 53);
+  font-family: $firstFont;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 3px;
+}
+
+.card-big-table-mini-row-text-black {
+  color: rgb(47, 48, 53);
+  font-family: $firstFont;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 3px;
 }
